@@ -1,0 +1,23 @@
+{
+  "name": "instagram-validator",
+  "version": "0.1.1",
+  "description": "Non-official Instagram validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnlinp/instagram-validator.git"
+  },
+  "keywords": [
+    "instagram",
+    "validator"
+  ],
+  "author": "johnlinp@gmail.com",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/johnlinp/instagram-validator/issues"
+  },
+  "homepage": "https://github.com/johnlinp/instagram-validator#readme"
+}
