@@ -3,7 +3,7 @@
   <groupId>io.github.johnlinp</groupId>
   <artifactId>instagram-validator</artifactId>
   <packaging>jar</packaging>
-  <version>0.3-SNAPSHOT</version>
+  <version>0.3</version>
   <name>instagram-validator</name>
   <description>Non-official Instagram validator</description>
   <url>https://github.com/johnlinp/instagram-validator</url>
@@ -20,7 +20,7 @@
     <connection>scm:git:https://github.com/johnlinp/instagram-validator.git</connection>
     <developerConnection>scm:git:https://github.com/johnlinp/instagram-validator.git</developerConnection>
     <url>https://github.com/johnlinp/instagram-validator</url>
-    <tag>HEAD</tag>
+    <tag>java-instagram-validator-0.3</tag>
   </scm>
 
   <distributionManagement>
