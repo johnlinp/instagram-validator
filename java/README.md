@@ -17,7 +17,7 @@ It currently supports Maven.
     <dependency>
       <groupId>io.github.johnlinp</groupId>
       <artifactId>instagram-validator</artifactId>
-      <version>0.1</version>
+      <version>0.4</version>
     </dependency>
     ...
   </dependencies>
