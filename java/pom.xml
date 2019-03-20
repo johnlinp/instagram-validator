@@ -34,9 +34,24 @@
     </repository>
   </distributionManagement>
 
+  <developers>
+    <developer>
+      <id>johnlinp</id>
+      <name>John Lin</name>
+      <email>johnlinp@gmail.com</email>
+      <url>http://johnlin.tw/</url>
+    </developer>
+  </developers>
+
   <profiles>
     <profile>
       <id>release-sign</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
       <build>
         <plugins>
           <plugin>
