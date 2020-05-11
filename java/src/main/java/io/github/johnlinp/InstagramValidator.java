@@ -4,6 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class InstagramValidator {
+    private InstagramValidator() {
+    }
+
     public static boolean isValidHashtag(String str) {
         Pattern pattern = Pattern.compile("^#[^~`!@#$%^&*\\(\\)\\-\\+={}\\[\\]:;\"'<>\\?,\\./|\\\\\\s]+$");
         Matcher matcher = pattern.matcher(str);
