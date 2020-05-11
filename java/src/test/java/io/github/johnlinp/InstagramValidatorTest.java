@@ -1,18 +1,12 @@
 package io.github.johnlinp;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-public class InstagramValidatorTest extends TestCase {
-    public InstagramValidatorTest(String testName) {
-        super(testName);
-    }
+import org.junit.Test;
 
-    public static Test suite() {
-        return new TestSuite(InstagramValidatorTest.class);
-    }
-
+public class InstagramValidatorTest {
+    @Test
     public void testInstagramHashtagValidation() {
         assertTrue(InstagramValidator.isValidHashtag("#hello"));
         assertTrue(InstagramValidator.isValidHashtag("#5566"));
