@@ -7,6 +7,29 @@ import org.junit.Test;
 
 public class InstagramValidatorTest {
     @Test
+    public void testInstagramUsernameValidation() {
+        assertTrue(InstagramValidator.isValidUsername("abc"));
+        assertTrue(InstagramValidator.isValidUsername("a_bc"));
+        assertTrue(InstagramValidator.isValidUsername("a.bc"));
+        assertTrue(InstagramValidator.isValidUsername("a"));
+        assertTrue(InstagramValidator.isValidUsername("abc123"));
+        assertTrue(InstagramValidator.isValidUsername("_abc"));
+        assertTrue(InstagramValidator.isValidUsername("abc_"));
+        assertTrue(InstagramValidator.isValidUsername("abcabcabcabcabcabcabcabcabcabc"));
+        assertTrue(InstagramValidator.isValidUsername("123.123"));
+
+        assertFalse(InstagramValidator.isValidUsername(""));
+        assertFalse(InstagramValidator.isValidUsername("123"));
+        assertFalse(InstagramValidator.isValidUsername("abc."));
+        assertFalse(InstagramValidator.isValidUsername(".abc"));
+        assertFalse(InstagramValidator.isValidUsername("abcabcabcabcabcabcabcabcabcabca"));
+        assertFalse(InstagramValidator.isValidUsername("abc+abc"));
+        assertFalse(InstagramValidator.isValidUsername("abc,abc"));
+        assertFalse(InstagramValidator.isValidUsername("abc-abc"));
+        assertFalse(InstagramValidator.isValidUsername("abc/abc"));
+    }
+
+    @Test
     public void testInstagramHashtagValidation() {
         assertTrue(InstagramValidator.isValidHashtag("#hello"));
         assertTrue(InstagramValidator.isValidHashtag("#5566"));
